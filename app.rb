@@ -1,4 +1,4 @@
-# #class App < Sinatra::Base
+class App < Sinatra::Base
 
 #   get '/' do 
 #     "Hello, World!"
@@ -8,4 +8,5 @@
 get '/hello/:id' do
   @name = params[:id]
   "Hello #{@name}"
+end
 end
